@@ -1,0 +1,120 @@
+.six-screen {
+	height: 650px;
+	background-color: #80898e;
+}
+
+.reviews {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px;
+  padding: 0px;
+}
+
+.reviews-item {
+  margin: 0px;
+  padding: 0px;
+  width: 275px;
+  height: 325px;
+  filter: grayscale(100%);
+  position: relative;
+}
+
+.reviews-item1 {
+  background-image: url(../../img/scr6-photo-1.jpg);
+  background-position: -1px -20px;
+  background-repeat: no-repeat;
+}
+
+.reviews-item2 {
+  background-image: url(../../img/scr6-photo-2.jpg);
+  background-position: -276px -71px;
+  background-repeat: no-repeat;
+}
+
+.reviews-item3 {
+  background-image: url(../../img/scr6-photo-3.jpg);
+  background-position: -316px -34px;
+  background-repeat: no-repeat;
+}
+
+.reviews-item4 {
+  background-image: url(../../img/scr6-photo-4.jpg);
+  background-position: -471px -189px;
+  background-repeat: no-repeat;
+}
+
+.reviews-item5 {
+  background-image: url(../../img/scr6-photo-5.jpg);
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+}
+
+.reviews-item6 {
+  background-image: url(../../img/scr6-photo-6.jpg);
+  background-position: -198px 0px;
+  background-repeat: no-repeat;
+}
+
+.reviews-item7 {
+  background-image: url(../../img/scr6-photo-7.jpg);
+  background-position: -123px 0px;
+  background-repeat: no-repeat;
+}
+
+.reviews-item8 {
+  background-image: url(../../img/scr6-photo-8.jpg);
+  background-position: -159px -5px;
+  background-repeat: no-repeat;
+}
+
+.reviews-item-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: #141414;
+  opacity: 0.7;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+}
+
+.reviews-header {
+  color: #ffffff;
+  font-family: Gagalin;
+  font-size: 14px;
+  line-height: 28px;
+  margin-top: 40px;
+  margin-left: 20px;
+  text-transform: uppercase;
+}
+
+.reviews-desciption {
+  color: #ffffff;
+  font-family: Ubuntu Light;
+  font-size: 14px;
+  line-height: 24px;
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.review-btn {
+  display: inline-block;
+  color: #ffffff;
+  font-family: Ubuntu Medium;
+  font-size: 13px;
+  line-height: 30px;
+  margin-top: 15px;
+  margin-left: 20px;
+  text-transform: uppercase;
+  width: 110px;
+  height: 37px;
+  background-color: #2f3234;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 4px;
+}
+
+.review-btn:hover {
+  background-color: #1f2122;
+}

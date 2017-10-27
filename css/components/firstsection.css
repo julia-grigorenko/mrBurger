@@ -1,0 +1,142 @@
+.first-screen {
+	height: 650px;
+	background-color: #80898e;
+	background-image: url(../../img/bg-scr-1.png);repeat: no;
+	background-repeat: no-repeat;
+}
+
+.first-screen__header {
+  min-height: 90px;
+  display: flex;
+  flex-direction: row;
+	align-items: center;
+}
+
+.first-screen__header__logo {
+	margin-top: 5px;
+	flex-basis: 33%;
+	margin-left: 2px;
+	margin-right: 2px;
+
+}
+
+.first-screen__header__logo svg {
+	width: 90px;
+	height: 70px;
+}
+
+.first-screen__header__nav__list {
+	display: flex;
+  flex-direction: row;
+}
+
+.first-screen__header__nav__item {
+	position: relative;
+	margin-right: 36px;
+}
+
+.first-screen__header__nav__item:last-child {
+	margin-right: 0px;
+}
+
+.first-screen__header__nav__link {
+	color: #ffffff;
+	font-family: Ubuntu medium;
+	font-size: 13px;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+
+.first-screen__header__nav__item:after {
+	content: "";
+	width: 4px;
+	height: 4px;
+	background: #ffffff;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	position: absolute;
+	top: 12px;
+	right: -21px;
+}
+
+.first-screen__header__nav__item:last-child:after {
+	content: "";
+	top: 0;
+	right:0;
+	background-color: transparent;
+}
+
+.first-screen__header__order-btn {
+	margin-left: 15px;
+
+}
+
+.order-btn {
+	color: #ffffff;
+	font-family: Ubuntu medium;
+	font-size: 13px;
+	text-transform: uppercase;
+	width: 95px;
+	height: 35px;
+	background-color: #e45028;
+	border-radius: 7px;
+	display: inline-block;
+	text-align: center;
+	padding-top: 8px;
+}
+
+.first-screen__pagination {
+	position: absolute;
+	top: 79px;
+	left: 962px;
+}
+
+.listing-controls {
+	height: 6px;
+	width: 6px;
+	background-color: #ffffff;
+	cursor: pointer;
+	display: block;
+	margin-top: 15px;
+	position: relative;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+}
+
+.listing-controls-active:after {
+	border: 1px solid #ffffff;
+	content: " ";
+	display: block;
+	height: 14px;
+	left: -5px;
+	position: absolute;
+	top: -5px;
+	width: 14px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+}
+
+.first-screen__main {
+	display: flex;
+	flex-direction: row;
+}
+
+.first-screen__main__img {
+	margin-top: -15px;
+	margin-left: 18px;
+}
+
+.first-screen__main__slogan {
+	margin-top: 135px;
+	margin-left: 15px;
+}
+
+.first-screen__footer {
+	text-align: center;
+	margin-top: 90px;
+}

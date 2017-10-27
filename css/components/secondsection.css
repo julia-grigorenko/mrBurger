@@ -1,0 +1,46 @@
+.second-screen {
+	height: 650px;
+	background-color: #ffffff;
+	background-image: url(../../img/bg-scr-2.jpg);repeat: no;
+	background-repeat: no-repeat;
+}
+
+.second-screen__header {
+  text-align: center;
+  padding-top: 80px;
+}
+
+.features {
+  display: flex;
+  flex-direction: row;
+  margin-top: 80px;
+}
+
+.feature-item {
+  display: flex;
+  flex-direction: column;
+  margin-right: 21px;
+  align-items:center;
+  flex-basis: 33%;
+}
+
+.feature-item:nth-child(3n) {
+  margin-right:0px;
+}
+
+.feature-img {
+  margin-bottom: 30px;
+}
+
+.feature-header {
+  /*min-height: 60px;*/
+    margin-bottom: 20px;
+}
+
+.feature-desciption {
+  text-align: center;
+  color: #2f3234;
+	font-family: Ubuntu Light;
+	font-size: 14px;
+	line-height: 24px;
+}

@@ -1,0 +1,208 @@
+.slider {
+  display: flex;
+
+  &__content {
+    display: flex;
+    flex: 1;
+    position: relative;
+  }
+  &__btn-ico {
+    width: 29px;
+    height: 15px;
+  }
+  .components {
+    opacity: .8;
+    display: flex;
+    &__ico {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 5.625rem;
+      height: 5.625rem;
+      background: #F08C33;
+      border-radius: 8px;
+      font-family: 'Gagalin-Regular', Helvetica, sans-serif;
+      position: absolute;
+      top: 0;
+      left: 0;
+      cursor: pointer;
+      color: #fff;
+      font-size: 0.875rem;
+      &:hover {
+        background: #e35028;
+      }
+      &-img {
+        width: 46px;
+        height: 46px;
+      }
+      &-text {
+        text-transform: uppercase;
+      }
+    }
+    &__list {
+        display: none;
+        background: rgba(255, 255, 255, 0.85);
+        border-radius: 5px;
+        flex-direction: column;
+        color: #2f3234;
+        position: absolute;
+        top: 0;
+        left: 5.625rem;
+        z-index: 999;
+        // justify-content: center;
+        &-close {
+          // display: none;
+          position: absolute;
+          right: 21px;
+          top: 5px;
+          width: 15px;
+          height: 15px;
+          cursor: pointer;
+          &:before,
+          &:after {
+            position: absolute;
+            left: 15px;
+            content: ' ';
+            height: 25px;
+            width: 4px;
+            background-color: #eb8262;
+            border-radius: 0.625rem;
+          }
+          &:before {
+            transform: rotate(45deg);
+          }
+          &:after {
+            transform: rotate(135deg);
+          }
+        }
+      }
+
+    &__item {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-bottom: 0.8125rem;
+      margin-left: 1.25rem;
+      &:first-child {
+        margin-top: 1.125rem;
+      }
+      &-ico {
+        width: 2.8125rem;
+        height: 2.8125rem;
+        margin-right: 1.5625rem;
+      }
+      &-text {
+        font-family: 'Ubuntu', Helvetica, sans-serif;
+        font-weight: 500;
+        margin-right: 4.1875rem;
+        font-size: 0.875rem;
+      }
+      &-qty {
+        display: flex;
+        flex-wrap: nowrap;
+        margin-right: 1.25rem;
+        font-family: 'Ubuntu', Helvetica, sans-serif;
+        font-weight: 300;
+        margin-left: auto;
+      }
+    }
+  }
+  &__calories {
+    background: url(../img/cal.svg) no-repeat center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 5.625rem;
+    height: 5.625rem;
+    opacity: .5;
+    transition: .3s;
+    font-family: 'Gagalin-Regular', Helvetica, sans-serif;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #ffffff;
+    &-text {
+      position: absolute;
+      top: 51%;
+      font-size: 1.25rem;
+    }
+  }
+  &__title {
+    color: #ffffff;
+    font-size: 4.5rem;
+    font-family: 'Gagalin-Regular', Helvetica, sans-serif;
+    margin-bottom: -0.25rem;
+    line-height: 0.9;
+    padding-top: 0;
+    margin-top: 0;
+    margin-top: -0.55rem;
+  }
+  &__text {
+    font-family: 'Ubuntu', Helvetica, sans-serif;
+    font-weight: 300;
+    margin-top: 1.875rem;
+    color: #ffffff;
+  }
+  &__price {
+    font-family: 'Gagalin-Regular', Helvetica, sans-serif;
+    font-size: 72px;
+    color: #e35028;
+    &--ru {
+      font-size: 1.875rem;
+    }
+  }
+  &__btn {
+    display: flex;
+    height: 35px;
+    width: 97px;
+    margin-left: 16.56rem;
+    margin-top: -3.5rem;
+    background: #e45028;
+    font-size: 0.8125rem;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 0.3125rem;
+    border: none;
+    padding: 0.5625rem 1rem;
+    transition: .5s;
+    font-family: 'Ubuntu', Helvetica, sans-serif;
+    font-weight: 500;
+  }
+}
+
+
+
+
+
+  .slide {
+    &_1 {
+      display: flex;
+      position: relative;
+    }
+    &_2 {
+      display: none;
+      position: relative;
+    }
+    &_3 {
+      display: none;
+      position: relative;
+    }
+    &_4 {
+      display: none;
+      position: relative;
+    }
+    &_5 {
+      display: none;
+      position: relative;g
+    }
+  }
+
+
+.components__ico:hover
+  .components__list {
+  display: flex;
+}

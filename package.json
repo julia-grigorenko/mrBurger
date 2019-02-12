@@ -1,0 +1,32 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "node-sass": "^4.9.4"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-sass": "^4.0.1",
+    "gulp-uglify": "^3.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass": "node-sass natours/app/sass/style.scss > natours/app/css/style.css",
+    "templates:sass": "node-sass templates/grid.scss > templates/grid.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yulia-grigorenko/mrBurger.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yulia-grigorenko/mrBurger/issues"
+  },
+  "homepage": "https://github.com/yulia-grigorenko/mrBurger#readme",
+  "description": ""
+}

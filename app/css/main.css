@@ -523,6 +523,16 @@ button, button:hover, button:active {
             align-items: center;
     -ms-flex-item-align: center;
         align-self: center; }
+  .container--menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-item-align: center;
+        align-self: center; }
 
 .clearfix:after {
   content: "";
@@ -784,9 +794,9 @@ body {
       font-size: 1.25rem; }
   .slider__title {
     color: #ffffff;
-    font-size: 4.5rem;
+    font-size: 4rem;
     font-family: 'Gagalin-Regular', Helvetica, sans-serif;
-    margin-bottom: 0.75rem;
+    margin-bottom: -0.25rem;
     line-height: 0.9;
     padding-top: 0;
     margin-top: 0;
@@ -796,6 +806,13 @@ body {
     font-weight: 300;
     margin-top: 1.875rem;
     color: #ffffff; }
+  .slider__action {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
   .slider__price {
     font-family: 'Gagalin-Regular', Helvetica, sans-serif;
     font-size: 72px;
@@ -803,10 +820,13 @@ body {
     .slider__price--ru {
       font-size: 1.875rem; }
   .slider__btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     height: 35px;
     width: 97px;
-    margin-left: 1.5625rem;
-    margin-top: 2.8rem;
+    margin-left: 16.56rem;
+    margin-top: -3.5rem;
     background: #e45028;
     font-size: 0.8125rem;
     text-transform: uppercase;
@@ -821,21 +841,13 @@ body {
     font-family: 'Ubuntu', Helvetica, sans-serif;
     font-weight: 500; }
 
-.slide_1 {
+.visible {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  position: relative; }
 
-.slide_2 {
-  display: none; }
-
-.slide_3 {
-  display: none; }
-
-.slide_4 {
-  display: none; }
-
-.slide_5 {
+.unvisible {
   display: none; }
 
 .components__ico:hover

@@ -131,7 +131,7 @@
   }
   &__title {
     color: #ffffff;
-    font-size: 4.5rem;
+    font-size: 4rem;
     font-family: 'Gagalin-Regular', Helvetica, sans-serif;
     margin-bottom: -0.25rem;
     line-height: 0.9;
@@ -144,6 +144,10 @@
     font-weight: 300;
     margin-top: 1.875rem;
     color: #ffffff;
+  }
+  &__action {
+    display: flex;
+    justify-content: space-between;
   }
   &__price {
     font-family: 'Gagalin-Regular', Helvetica, sans-serif;
@@ -178,27 +182,36 @@
 
 
 
-  .slide {
-    &_1 {
-      display: flex;
-      position: relative;
-    }
-    &_2 {
-      display: none;
-      position: relative;
-    }
-    &_3 {
-      display: none;
-      position: relative;
-    }
-    &_4 {
-      display: none;
-      position: relative;
-    }
-    &_5 {
-      display: none;
-      position: relative;g
-    }
+  // .slide {
+  //   &_1 {
+  //     display: flex;
+  //     position: relative;
+  //   }
+  //   &_2 {
+  //     display: none;
+  //     position: relative;
+  //   }
+  //   &_3 {
+  //     display: none;
+  //     position: relative;
+  //   }
+  //   &_4 {
+  //     display: none;
+  //     position: relative;
+  //   }
+  //   &_5 {
+  //     display: none;
+  //     position: relative;
+  //   }
+  // }
+
+  .visible {
+    display: flex;
+    position: relative;
+  }
+
+  .unvisible {
+    display: none;
   }
 
 

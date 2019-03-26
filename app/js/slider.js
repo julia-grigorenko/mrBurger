@@ -5,12 +5,15 @@ let slider = document.querySelector('.slider'),
     slides = slider.querySelectorAll('.slider__content .slide'),
     currentSlide = 0;
 
-function nextSlide() {
-  goToSlide(currentSlide +1);
+var slideInterval;
+
+
+function sliderRevival() {
+  slideInterval = setInterval(nextSlide,4500);
 }
 
-function previousSlide() {
-  goToSlide(currentSlide - 1);
+function pauseSlideshow() {
+    clearInterval(slideInterval);
 }
 
 function goToSlide(n) {
@@ -19,13 +22,23 @@ function goToSlide(n) {
   slides[currentSlide].className = 'slide visible';
 }
 
+function nextSlide() {
+  goToSlide(currentSlide +1);
+}
+
+function previousSlide() {
+  goToSlide(currentSlide - 1);
+}
+
 nextButton.onclick = function() {
-    // pauseSlideshow();
-    nextButton.style.fill = 'red';
-    nextSlide();
+  pauseSlideshow();
+  nextSlide();
+  setTimeout(sliderRevival,6000);
 };
 backButton.onclick = function() {
-    // pauseSlideshow();
-    nextButton.style.fill = 'green';
-    previousSlide();
+  pauseSlideshow();
+  previousSlide();
+  setTimeout(sliderRevival,6000);
 };
+
+sliderRevival();

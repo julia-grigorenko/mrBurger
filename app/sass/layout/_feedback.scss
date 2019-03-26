@@ -1,0 +1,97 @@
+.feedback {
+	min-height: 650px;
+	width: 100vw;
+	background-color: #80898e;
+}
+
+.reviews {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px;
+  padding: 0px;
+
+	&__item {
+		width: 25%;
+		height: 50%;
+		position: relative;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		filter: grayscale(100%);
+		&--1 {
+			background-image: url(../img/scr6-photo-1.jpg);
+		}
+		&--2 {
+			background-image: url(../img/scr6-photo-2.jpg);
+		}
+		&--3 {
+			background-image: url(../img/scr6-photo-3.jpg);
+		}
+		&--4 {
+			background-image: url(../img/scr6-photo-4.jpg);
+		}
+		&--5 {
+			background-image: url(../img/scr6-photo-5.jpg);
+		}
+		&--6 {
+			background-image: url(../img/scr6-photo-6.jpg);
+		}
+		&--7 {
+			background-image: url(../img/scr6-photo-7.jpg);
+		}
+		&--8 {
+			background-image: url(../img/scr6-photo-8.jpg);
+		}
+	}
+	&__overlay {
+		height: 100%;
+		width: 100%;
+    background-color: rgba(20,20,20,.7);
+    padding: 3.125rem 2.0625rem 0 1.25rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s linear all;
+	}
+	&__header {
+	  color: #ffffff;
+	  font-family: 'Gagalin-Regular';
+		font-size: 0.875rem;
+    margin-bottom: 1.5625rem;
+		text-transform: uppercase;
+	}
+	&__desciption {
+	  color: #ffffff;
+	  font-family: 'Ubuntu';
+		font-weight: 300;
+		font-size: 0.875rem;
+    margin-bottom: 0.8125rem;
+	}
+	&__btn {
+	  display: inline-block;
+	  color: #ffffff;
+	  font-family: 'Ubuntu';
+		font-weight: 500;
+		font-size: 0.75rem;
+		border-radius: 0.3125rem;
+		background-color: #2f3234;
+		padding: 0.5rem 0.75rem;
+	  text-transform: uppercase;
+		transition: .3s;
+		&:hover {
+		  background-color: #1f2122;
+		}
+	}
+}
+
+.reviews__popup-content {
+	max-width: 300px;
+	color: black;
+	// display: none;
+}
+
+.reviews__item:active,
+.reviews__item:hover
+.reviews__overlay {
+	opacity: 1;
+	visibility: visible;
+}

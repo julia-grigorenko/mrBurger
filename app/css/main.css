@@ -812,21 +812,33 @@ body {
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-            justify-content: space-between; }
+            justify-content: space-between;
+    margin-top: 1rem; }
   .slider__price {
     font-family: 'Gagalin-Regular', Helvetica, sans-serif;
     font-size: 72px;
-    color: #e35028; }
+    color: #e35028;
+    line-height: 1;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
     .slider__price--ru {
-      font-size: 1.875rem; }
+      font-size: 1.875rem;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
   .slider__btn {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
     height: 35px;
     width: 97px;
-    margin-left: 16.56rem;
-    margin-top: -3.5rem;
     background: #e45028;
     font-size: 0.8125rem;
     text-transform: uppercase;
@@ -845,16 +857,87 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative; }
+  position: relative;
+  -webkit-transition: .3s linear all;
+  transition: .3s linear all; }
 
 .unvisible {
-  display: none; }
+  display: none;
+  -webkit-transition: .3s linear all;
+  transition: .3s linear all; }
 
 .components__ico:hover
 .components__list {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-transition: .3s linear all;
+  transition: .3s linear all; }
+
+.modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(47, 50, 52, 0.92); }
+  .modal__content {
+    max-width: 30%;
+    z-index: 101;
+    margin: auto;
+    padding: 2%;
+    background-color: #fff;
+    border-radius: .375rem;
+    -webkit-box-shadow: 0 0 40px rgba(0, 0, 1, 0.5);
+            box-shadow: 0 0 40px rgba(0, 0, 1, 0.5);
+    color: #2f3234; }
+  .modal__header {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-family: 'Gagalin-Regular',Helvetica,sans-serif; }
+  .modal__close {
+    position: relative;
+    padding: 0;
+    width: .9375rem;
+    height: .9375rem;
+    font-size: 0;
+    border: 0;
+    cursor: pointer; }
+    .modal__close:before, .modal__close:after {
+      content: "";
+      position: absolute;
+      top: 0.7rem;
+      left: 0;
+      width: 1rem;
+      height: 0.2rem;
+      background-color: #e45028;
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg); }
+    .modal__close:after {
+      -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg); }
+    .modal__close:hover:before, .modal__close:hover:after {
+      background-color: #b83917; }
+  .modal__body {
+    font-family: 'Ubuntu', Helvetica,sans-serif;
+    font-weight: 300;
+    margin-top: 1.875rem; }
+  .modal-close {
+    display: none; }
+  .modal-show {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
 
 .greeting {
   position: relative;
@@ -987,8 +1070,9 @@ body {
     display: flex;
     opacity: .8; }
 
-.six-screen {
-  height: 650px;
+.feedback {
+  min-height: 650px;
+  width: 100vw;
   background-color: #80898e; }
 
 .reviews {
@@ -999,102 +1083,76 @@ body {
       flex-wrap: wrap;
   margin: 0px;
   padding: 0px; }
+  .reviews__item {
+    width: 25%;
+    height: 50%;
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%); }
+    .reviews__item--1 {
+      background-image: url(../img/scr6-photo-1.jpg); }
+    .reviews__item--2 {
+      background-image: url(../img/scr6-photo-2.jpg); }
+    .reviews__item--3 {
+      background-image: url(../img/scr6-photo-3.jpg); }
+    .reviews__item--4 {
+      background-image: url(../img/scr6-photo-4.jpg); }
+    .reviews__item--5 {
+      background-image: url(../img/scr6-photo-5.jpg); }
+    .reviews__item--6 {
+      background-image: url(../img/scr6-photo-6.jpg); }
+    .reviews__item--7 {
+      background-image: url(../img/scr6-photo-7.jpg); }
+    .reviews__item--8 {
+      background-image: url(../img/scr6-photo-8.jpg); }
+  .reviews__overlay {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(20, 20, 20, 0.7);
+    padding: 3.125rem 2.0625rem 0 1.25rem;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: .3s linear all;
+    transition: .3s linear all; }
+  .reviews__header {
+    color: #ffffff;
+    font-family: 'Gagalin-Regular';
+    font-size: 0.875rem;
+    margin-bottom: 1.5625rem;
+    text-transform: uppercase; }
+  .reviews__desciption {
+    color: #ffffff;
+    font-family: 'Ubuntu';
+    font-weight: 300;
+    font-size: 0.875rem;
+    margin-bottom: 0.8125rem; }
+  .reviews__btn {
+    display: inline-block;
+    color: #ffffff;
+    font-family: 'Ubuntu';
+    font-weight: 500;
+    font-size: 0.75rem;
+    border-radius: 0.3125rem;
+    background-color: #2f3234;
+    padding: 0.5rem 0.75rem;
+    text-transform: uppercase;
+    -webkit-transition: .3s;
+    transition: .3s; }
+    .reviews__btn:hover {
+      background-color: #1f2122; }
 
-.reviews-item {
-  margin: 0px;
-  padding: 0px;
-  width: 275px;
-  height: 325px;
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
-  position: relative; }
+.reviews__popup-content {
+  max-width: 300px;
+  color: black; }
 
-.reviews-item1 {
-  background-image: url(../img/scr6-photo-1.jpg);
-  background-position: -1px -20px;
-  background-repeat: no-repeat; }
-
-.reviews-item2 {
-  background-image: url(../img/scr6-photo-2.jpg);
-  background-position: -276px -71px;
-  background-repeat: no-repeat; }
-
-.reviews-item3 {
-  background-image: url(../img/scr6-photo-3.jpg);
-  background-position: -316px -34px;
-  background-repeat: no-repeat; }
-
-.reviews-item4 {
-  background-image: url(../img/scr6-photo-4.jpg);
-  background-position: -471px -189px;
-  background-repeat: no-repeat; }
-
-.reviews-item5 {
-  background-image: url(../img/scr6-photo-5.jpg);
-  background-position: 0px 0px;
-  background-repeat: no-repeat; }
-
-.reviews-item6 {
-  background-image: url(../img/scr6-photo-6.jpg);
-  background-position: -198px 0px;
-  background-repeat: no-repeat; }
-
-.reviews-item7 {
-  background-image: url(../img/scr6-photo-7.jpg);
-  background-position: -123px 0px;
-  background-repeat: no-repeat; }
-
-.reviews-item8 {
-  background-image: url(../img/scr6-photo-8.jpg);
-  background-position: -159px -5px;
-  background-repeat: no-repeat; }
-
-.reviews-item-overlay {
-  width: 100%;
-  height: 100%;
-  background-color: #141414;
-  opacity: 0.7;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  z-index: -1; }
-
-.reviews-header {
-  color: #ffffff;
-  font-family: Gagalin;
-  font-size: 14px;
-  line-height: 28px;
-  margin-top: 40px;
-  margin-left: 20px;
-  text-transform: uppercase; }
-
-.reviews-desciption {
-  color: #ffffff;
-  font-family: Ubuntu Light;
-  font-size: 14px;
-  line-height: 24px;
-  margin-top: 30px;
-  margin-left: 20px;
-  margin-right: 20px; }
-
-.review-btn {
-  display: inline-block;
-  color: #ffffff;
-  font-family: Ubuntu Medium;
-  font-size: 13px;
-  line-height: 30px;
-  margin-top: 15px;
-  margin-left: 20px;
-  text-transform: uppercase;
-  width: 110px;
-  height: 37px;
-  background-color: #2f3234;
-  border-radius: 5px;
-  text-align: center;
-  padding-top: 4px; }
-
-.review-btn:hover {
-  background-color: #1f2122; }
+.reviews__item:active,
+.reviews__item:hover
+.reviews__overlay {
+  opacity: 1;
+  visibility: visible; }
 
 .menu {
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(24%, #f9b43b), color-stop(48%, #eb8c38), color-stop(74%, #f9b43b));

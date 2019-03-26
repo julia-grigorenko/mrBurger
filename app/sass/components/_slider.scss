@@ -148,21 +148,26 @@
   &__action {
     display: flex;
     justify-content: space-between;
+        margin-top: 1rem;
   }
   &__price {
     font-family: 'Gagalin-Regular', Helvetica, sans-serif;
     font-size: 72px;
     color: #e35028;
+    line-height: 1;
+    align-self: flex-end;
+    display: flex;
     &--ru {
       font-size: 1.875rem;
+      align-self: flex-end;
+      display: flex;
     }
   }
   &__btn {
     display: flex;
+    align-self: flex-end;
     height: 35px;
     width: 97px;
-    margin-left: 16.56rem;
-    margin-top: -3.5rem;
     background: #e45028;
     font-size: 0.8125rem;
     text-transform: uppercase;
@@ -178,44 +183,19 @@
   }
 }
 
-
-
-
-
-  // .slide {
-  //   &_1 {
-  //     display: flex;
-  //     position: relative;
-  //   }
-  //   &_2 {
-  //     display: none;
-  //     position: relative;
-  //   }
-  //   &_3 {
-  //     display: none;
-  //     position: relative;
-  //   }
-  //   &_4 {
-  //     display: none;
-  //     position: relative;
-  //   }
-  //   &_5 {
-  //     display: none;
-  //     position: relative;
-  //   }
-  // }
-
   .visible {
     display: flex;
     position: relative;
+    transition: .3s linear all
   }
 
   .unvisible {
     display: none;
+    transition: .3s linear all
   }
-
 
 .components__ico:hover
   .components__list {
   display: flex;
+  transition: .3s linear all
 }
